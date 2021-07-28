@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display:inline-block;
+        }
+        .square{
+            height: 50px;
+            width: 50px;
+            border: 2px solid pink;
+        }
+        .square-rounded{
+            border-radius: 20px;
+        }
+        .rect{
+            height: 50px;
+            width: 150px;
+            border: 2px solid pink;
+        }
+        .circle{
+            height: 50px;
+            width: 50px;
+            border: 2px solid pink;
+            border-radius: 50%;
+        }
+        .img-circle{
+            width:50px;
+            border-radius: 50%;
+        }
+        .bg-circle{
+            
+            background-image: url("Images/poe.jpg");
+            background-size: 50px;
+        }
+        .triangle{
+            border: 50px solid pink;
+            border-bottom-color: blue;
+            border-top-width: 0px;
+        }
+        .triangle-2{
+            border: 50px solid pink;
+            border-bottom-color: blue;
+            border-right-color: blue;
+        }
+        .envlope{
+            border: 55px solid #c5c5c5;
+            border-top-color: black;
+            border-bottom-width: 10px;
+            border-radius: 5px;
+        }
+        .exercise{
+            width: 165px;
+            height: 80px;
+            /* border: 3px solid; */
+            background: pink;
+            margin-left: 100px;
+        }
+        .exercise::before{
+            content: " ";
+            border: 40px solid pink;
+            border-right-width: 0px;
+            border-left-color: white;
+            position: absolute;
+            left: 70px;
+        }
+        .exercise::after{
+            content: " ";
+            border: 40px solid white;
+            border-left-color: pink;
+            border-right-width: 0px;
+            position: absolute;
+            left: 260px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML CSS Shapes</h1>
+    <div class="square"></div>
+    <div class="square square-rounded"></div>
+    <div class="rect"></div>
+    <div class="circle"></div>
+    <img class="img-circle" src="Images/poe.jpg">
+    <div class="circle bg-circle"></div>
+    <hr>
+    <div class="triangle"></div>
+    <div class="triangle-2"></div>
+    <div class="envlope"></div>
+    <hr>
+    <h1>Homework</h1>
+    <div class="exercise"></div>
+</body>
+</html>

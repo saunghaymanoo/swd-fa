@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Part2</title>
+    <style>
+        .obj{
+            
+            width:50px;
+            height: 50px;
+            background-color: chocolate;
+            border-radius:50px;
+            border:5px solid pink;
+            border-color:royalblue red;
+            transform: translate(900px,400px);
+            animation:first 4s;
+        }
+        @keyframes first{
+            0%{
+                transform: translate(-300px,-400px) rotate(0);
+            }
+            20%{
+                transform: translate(300px,400px) rotate(360deg);
+                
+            }
+            30%{
+                transform: translate(400px,200px) rotate(720deg);
+            }
+            40%{
+                transform: translate(500px,400px) rotate(1080deg);
+            }
+            50%{
+                transform: translate(550px,300px) rotate(1440deg);
+            }
+            60%{
+                transform: translate(600px,400px) rotate(1800deg);
+            }
+            70%{
+                transform: translate(650px,340px);
+            }
+            100%{
+                 transform: translate(900px,400px) rotate(2600);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="obj"></div>
+</body>
+</html>
